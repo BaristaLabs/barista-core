@@ -1,7 +1,7 @@
 {
   "name": "barista-core",
   "version": "0.0.1",
-  "description": "barista-core",
+  "description": "Contains the core functionality for the NodeJS-based implementation of Barista.",
   "homepage": "https://github.com/baristalabs/barista-core",
   "repository": {
     "type": "git",
@@ -9,8 +9,8 @@
   },
   "main": "server.js",
   "author": {
-    "name": "SeanM",
-    "email": "github@baristalabs.com"
+    "name": "Oceanswave",
+    "email": "sean.mclellan@baristalabs.com"
   },
   "dependencies": {
     "generic-pool": "^2.4.0",

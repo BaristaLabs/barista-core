@@ -42,6 +42,9 @@
     <Compile Include="lib\middleware\baristaMiddleware.js" />
     <Compile Include="lib\middleware\brewHandler.js" />
     <Compile Include="server.js" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include="lib\codepress\README.md" />
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>
