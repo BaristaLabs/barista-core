@@ -5,14 +5,14 @@ var bodyParser = require('body-parser');
 var multer = require('multer');
 var upload = multer();
 
-module.exports.start = function (callback) {
+var start = function (callback) {
 
     var barista = requireUncached("./lib/middleware/baristaMiddleware.js");
 
     var app = express();
     app.use(bodyParser.json()); // for parsing application/json
     app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
-    app.all("/api/eval*", barista.brewHandler);
+    app.use("/api/eval*", barista.brewHandler);
     app.get("/api/consoleMessages/:correlationId", barista.consoleMessagesHandler);
 
     return portfinder.getPort(function (err, port) {
@@ -36,11 +36,12 @@ module.exports.start = function (callback) {
 };
 
 var barista = null;
-module.exports.createBaristaServer = function (callback) {
+
+module.exports.shutdown = function () {
     if (barista) {
         barista.barista.shutdown();
         barista.server.close();
-        
+
         //Close all the sockets we know about.
         for (var socketId in barista.server.sockets) {
             barista.server.sockets[socketId].destroy();
@@ -48,9 +49,12 @@ module.exports.createBaristaServer = function (callback) {
 
         barista = null;
     }
+}
+
+module.exports.createBaristaServer = function (callback) {
     
     //Start a Barista Server
-    module.exports.start(function (result) {
+    start(function (result) {
         barista = result;
         var baristaServer = result.server;
 
