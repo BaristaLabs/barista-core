@@ -13,24 +13,25 @@
     "email": "sean.mclellan@baristalabs.com"
   },
   "dependencies": {
-    "generic-pool": "^2.4.0",
-    "lodash": "~3.10.1",
-    "node-cache": "^3.0.1",
     "async": "^1.5.1",
+    "body-parser": "^1.14.2",
     "csso": "^1.4.4",
+    "express": "^4.13.3",
+    "generic-pool": "^2.4.0",
     "handlebars": "^4.0.5",
     "json-stringify-safe": "^5.0.1",
     "linq": "^3.0.5",
+    "lodash": "^4.0.1",
     "memorystream": "^0.3.1",
     "moment": "^2.11.0",
+    "multer": "^1.1.0",
+    "node-cache": "^3.0.1",
+    "node-uuid": "^1.4.7",
+    "portfinder": "^0.4.0",
     "q": "^1.4.1",
     "require-uncached": "^1.0.2",
     "stack-trace": "0.0.9",
-    "uglify-js": "^2.6.1",
-    "body-parser": "^1.14.2",
-    "express": "^4.13.3",
-    "multer": "^1.1.0",
-    "node-uuid": "^1.4.7",
-    "portfinder": "^0.4.0"
-  }
+    "uglify-js": "^2.6.1"
+  },
+  "license": "ISC"
 }

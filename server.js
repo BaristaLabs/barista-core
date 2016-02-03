@@ -3,6 +3,7 @@ var portfinder = require("portfinder");
 var requireUncached = require('require-uncached');
 var bodyParser = require('body-parser');
 var multer = require('multer');
+var _ = require("lodash");
 var upload = multer();
 
 var start = function (callback) {
@@ -37,22 +38,23 @@ var start = function (callback) {
 
 var barista = null;
 
-module.exports.shutdown = function () {
+module.exports.shutdown = function (callback) {
+    
     if (barista) {
         barista.barista.shutdown();
-        barista.server.close();
 
         //Close all the sockets we know about.
         for (var socketId in barista.server.sockets) {
             barista.server.sockets[socketId].destroy();
         }
-
+        barista.server.close(callback);
         barista = null;
     }
 }
 
 module.exports.createBaristaServer = function (callback) {
-    
+    module.exports.shutdown();
+
     //Start a Barista Server
     start(function (result) {
         barista = result;
@@ -69,7 +71,7 @@ module.exports.createBaristaServer = function (callback) {
 
             // Remove the socket when it closes
             socket.on('close', function () {
-                delete baristaServer.sockets[socketId];
+                _.unset(baristaServer.sockets, socketId);
             });
         });
 
