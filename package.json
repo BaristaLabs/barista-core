@@ -7,14 +7,13 @@
     "type": "git",
     "url": "git://github.com/baristalabs/barista-core.git"
   },
-  "main": "server.js",
+  "main": "./lib/index.js",
   "author": {
     "name": "Oceanswave",
     "email": "sean.mclellan@baristalabs.com"
   },
   "dependencies": {
     "async": "^1.5.1",
-    "body-parser": "^1.14.2",
     "csso": "^1.4.4",
     "express": "^4.13.3",
     "generic-pool": "^2.4.0",
@@ -24,7 +23,6 @@
     "lodash": "^4.0.1",
     "memorystream": "^0.3.1",
     "moment": "^2.11.0",
-    "multer": "^1.1.0",
     "node-cache": "^3.0.1",
     "node-uuid": "^1.4.7",
     "portfinder": "^0.4.0",

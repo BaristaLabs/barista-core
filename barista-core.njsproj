@@ -31,7 +31,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="lib\main\app.js" />
+    <Compile Include="lib\index.js" />
+    <Compile Include="lib\main\index.js" />
     <Compile Include="lib\main\baristaPool.js" />
     <Compile Include="lib\codepress\baristaConsole.js" />
     <Compile Include="lib\codepress\baristaGlobal.js" />
@@ -39,9 +40,8 @@
     <Compile Include="lib\codepress\codepress.js" />
     <Compile Include="lib\codepress\responseTemplates.js" />
     <Compile Include="lib\main\localBarista.js" />
-    <Compile Include="lib\middleware\baristaMiddleware.js" />
+    <Compile Include="lib\middleware\index.js" />
     <Compile Include="lib\middleware\brewHandler.js" />
-    <Compile Include="server.js" />
     <Content Include=".gitattributes" />
     <Content Include=".gitignore" />
     <Content Include="lib\codepress\README.md" />
