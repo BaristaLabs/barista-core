@@ -1,6 +1,6 @@
 ﻿# barista-core
 
-###For those gettings started with barista, see BaristaLabs/barista-cli
+###For those gettings started with Barista, see BaristaLabs/barista-cli
 
 ===
 
