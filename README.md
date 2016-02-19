@@ -44,3 +44,6 @@ barista-scriptbox |  Provides an implementation of a service in which scripts ca
 barista-server | Acts as a headless-server for Barista; core, fiddle, scriptbox...
 barista-cli | Barista command line tool to interact with barista, start and monitor services, etc.
 barista-coldpress | Hosts Barista within an Electron process.
+
+#### Modules
+TODO...
