@@ -1,5 +1,8 @@
 ﻿# barista-core
-For those gettings started with barista, see BaristaLabs/barista-cli
+
+###For those gettings started with barista, see BaristaLabs/barista-cli
+
+===
 
 *This is a continuation of the patterns defined in the (closed-source) Barista implementation built on .NET and SharePoint technologies.*
 
