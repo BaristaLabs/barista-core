@@ -21,6 +21,7 @@ The .NET implementation of Barista uses a JavaScript engine, Jurassic, that JIT 
 The challenge here is that Node takes a nice, sandboxed JavaScript environment in V8 (and now Chakra) and rips it wide open -- giving scripts the ability to access system resources (FS, processes, etc). The node implementation of Barista closes this sandbox back up to Barista scripts and exposes only functionality that manipulates resources in (end) user-land.
 
 Some goals:
+* Reimplement Barista using Node to allow for the latest in JS/ECMAScript standards to be used and to provide high levels of peformance.
 * Barista executes each script in a seperate node process for isolation.
 * Scripts are time and memory limited so they do not run indefinately or use up system resources.
 * Barista module system (similar nee identical to NPM) that allows modules to be installed and extend an otherwise basic level of functionality.
