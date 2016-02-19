@@ -27,7 +27,16 @@ Some goals:
 * Available modules (either custom or built-in) do not perform system level actions.
 * Modules are available that perform actions familar to .NET developers and the .NET Implementation of Barista (EPPlus, SharePoint...)
 * Modules even though installed, must be whitelisted on a case-by-case basis.
+* Scripts can be interactively debugged remotely as an end-user.
 
 Future Goals:
 * Allow for remote sandbox processes to allow Barista to run in a clustered approach.
-* Multi-tenancy to allow Barista to run as a PaaS on AWS/Azure.
+* Multi-tenancy to allow Barista to run as a PaaS on AWS/Azure. 
+
+#### Structure
+barista-core: This repository contains the core barista capabilities that standup and manage sandbox instances, translate http requests to/from barista instances and translate the response back out, module system and so forth.
+barista-fiddle: Contains a native-web IDE in which Barista scripts can be interactively developed; providing autocomplete, debugging, and other common functionality.
+barista-scriptbox: Provides an implementation of a service in which scripts can be persisted.
+barista-server: Acts as a headless-server for Barista; core, fiddle, scriptbox...
+barista-cli: Command line tools to interact with barista, start and monitor services, etc. 
+barista-coldpress: Hosts Barista within an Electron process.
