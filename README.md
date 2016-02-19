@@ -10,7 +10,7 @@
 
 Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources.
 
-By exposing this functionality to CMS and other controlled environments (SharePoint, etc) this allows end-users to develop business functionality that would previously require customizations to the CMS software (E.g. Farm-Level Deployments). In tightly-governed environments, customizations to the software are expensive in terms of approval process, time to develop, and the potential of breaking changes when the CMS software is updated.
+By exposing this functionality to CMS and other controlled environments (SharePoint, etc) this allows end-users to develop business functionality that would previously require customizations to the CMS software (E.g. Farm-Level Deployments). Customizations to the CMS software are expensive in terms of time to develop, deploy and the potential of breaking changes when the CMS software is updated. In tighly-controlled environments, approval processes increase the latency between development and availability.
 
 Barista scripts can be deployed and managed similarly to content within a CMS and allows for a layer of abstraction between the scripts and the platform.
 
