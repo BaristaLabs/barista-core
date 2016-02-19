@@ -1,6 +1,6 @@
 {
   "name": "barista-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Contains the core functionality for the NodeJS-based implementation of Barista.",
   "homepage": "https://github.com/baristalabs/barista-core",
   "repository": {
