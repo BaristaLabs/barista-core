@@ -22,8 +22,8 @@ The challenge here is that Node takes a nice, sandboxed JavaScript environment i
 
 Some goals:
 * Reimplement Barista using Node to allow for the latest in JS/ECMAScript standards to be used and to provide high levels of peformance while providing multi-platform support (now, not later).
-* Barista executes each script in a seperate node process for isolation.
-* Scripts are time and memory limited so they do not run indefinately or use up system resources.
+* Barista executes each script in a seperate node process for isolation and fault-tolerance.
+* Scripts are time and memory limited so they do not execute indefinately or use all available system resources.
 * Barista module system (similar nee identical to NPM) that allows modules to be installed and extend an otherwise basic level of functionality.
 * Available modules (either custom or built-in) do not perform system level actions or grant access to system-level resources.
 * Modules are available that perform actions familar to .NET developers and the .NET Implementation of Barista (EPPlus, SharePoint...)
