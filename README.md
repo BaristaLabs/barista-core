@@ -4,8 +4,9 @@
 
 Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources.
 
-By exposing this functionality to CMS environments (SharePoint, etc) this allows end-users to develop business functionality that would previously require modifications to the CMS software (E.g. Farm-Level Deployments)
+By exposing this functionality to CMS and other controlled environments (SharePoint, etc) this allows end-users to develop business functionality that would previously require modifications to the CMS software (E.g. Farm-Level Deployments) which in highly-controlled environments are slow to deploy.
 
+---
 
 Previously, the .Net implementation of Barista used a JavaScript engine developed in .Net which JIT compiled JS to IL using Jurassic. While JS/ECMAScript has moved forward, Jurassic has not. Other libraries exist for .NET which allow scripts to execute in a similar fashion (JINT/JavaScript.Net/NiL.JS...) however each suffers in its own way, either in performance, lack of full compatability and so forth. With Node/V8, there exists a platform that is actively being developed incorporating the latest standards and focusing on performance.
 
