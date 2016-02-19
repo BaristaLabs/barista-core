@@ -24,7 +24,7 @@ Some goals:
 * Barista executes each script in a seperate node process for isolation.
 * Scripts are time and memory limited so they do not run indefinately or use up system resources.
 * Barista module system (similar nee identical to NPM) that allows modules to be installed and extend an otherwise basic level of functionality.
-* Available modules (either custom or built-in) do not perform system level actions.
+* Available modules (either custom or built-in) do not perform system level actions or grant access to system-level resources.
 * Modules are available that perform actions familar to .NET developers and the .NET Implementation of Barista (EPPlus, SharePoint...)
 * Modules even though installed, must be whitelisted on a case-by-case basis.
 * Scripts can be interactively debugged remotely as an end-user.
