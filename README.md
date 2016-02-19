@@ -38,7 +38,7 @@ Future Goals:
 Repository | Description
 ---------- | -----------
 barista-core | This repository contains the core barista capabilities that standup and manage sandbox instances, translate http requests to/from barista instances and translate the response back out, module system and so forth.
-barista-fiddle |  Contains a native-web IDE in which Barista scripts can be interactively developed; providing autocomplete, debugging, and other common functionality.
+barista-fiddle |  Contains a native-web IDE in which Barista scripts can be interactively developed; providing autocomplete, debugging, and other functionality common to development environments.
 barista-scriptbox |  Provides an implementation of a service in which scripts can be persisted.
 barista-server | Acts as a headless-server for Barista; core, fiddle, scriptbox...
 barista-cli | Barista command line tool to interact with barista, start and monitor services, etc.
