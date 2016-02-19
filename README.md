@@ -4,6 +4,8 @@
 
 ===
 
+#### Overview
+
 *This is a continuation of the patterns defined in the (closed-source) Barista implementation built on .NET and SharePoint technologies.*
 
 Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources.
