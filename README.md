@@ -8,9 +8,9 @@
 
 *This is a continuation of the patterns defined in the (closed-source) Barista implementation built on .NET and SharePoint technologies.*
 
-In a nutshell, Barista acts as SaaS to build application-level services.
+In a nutshell, Barista helps end-users build server-side HTTP-based APIs using scripts that are treated as content.
 
-Once you've wrapped your head around that, another description might be that Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources. These scripts are executed via a service.
+Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources. These scripts are executed via a HTTP-endpoint and can be used by jQuery, .Net, Nintex or any technology that can make http calls.
 
 By exposing this functionality to CMS and other controlled environments (SharePoint, etc) this allows end-users to develop business functionality that would previously require customizations to the CMS software (E.g. Farm-Level Deployments). Customizations to the CMS software are expensive in terms of time to develop, deploy and the potential of breaking changes when the CMS software is updated. In tighly-controlled environments, approval processes increase the latency between development and availability.
 
