@@ -45,7 +45,7 @@ barista-fiddle |  Contains a native-web IDE in which Barista scripts can be inte
 barista-scriptbox |  Provides an implementation of a service in which scripts can be persisted.
 barista-server | Acts as a headless-server for Barista; core, fiddle, scriptbox...
 barista-cli | Barista command line tool to interact with barista, start and monitor services, etc.
-barista-coldpress | Hosts Barista within an Electron process.
+barista-coldpress | Provides an all-in-one desktop app for Barista using Electron to allow scripts to be developed, executed and stored..
 
 #### Modules
 TODO...
