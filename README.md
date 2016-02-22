@@ -1,14 +1,12 @@
 ﻿# barista-core
 
-###For those getting started with Barista, see BaristaLabs/barista-cli
-
-===
-
 #### Overview
 
 *This is a continuation of the patterns defined in the (closed-source) Barista implementation built on .NET and SharePoint technologies.*
 
 In a nutshell, Barista helps end-users build server-side HTTP-based APIs using scripts that are treated as content.
+
+#####*"It's like LinqPad for WebAPIs that can be built in production!"*
 
 Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources. These scripts are executed via a HTTP-endpoint and can be used by jQuery, .Net, Nintex or any technology that can make http calls.
 
@@ -18,7 +16,7 @@ Barista scripts can be deployed and managed similarly to content within a CMS an
 
 ---
 
-The .NET implementation of Barista uses a JavaScript engine, Jurassic, that JIT compiles JS to .NET IL. While JS/ECMAScript has moved forward, Jurassic has not. Other libraries exist for .NET which allow scripts to be interpered or compiled and executed in a similar fashion (JINT/JavaScript.Net/NiL.JS...) however each suffers in its own way, either in performance, lack of full compatability, level of maintence required and so forth. While contributions back to Jurassic, contributions to another library, or a completely custom JS engine built in .NET can be developed, the LOE to do so is extremely high. With Node/V8, there exists a platform that is actively being developed and maintained, is cross-platform and incorporates the latest in ECMAScript standards and focuses on performance and efficency. In the future, Node/Chakra will allow an even more Microsofty stack, if that is of importance in your use case.
+The .NET implementation of Barista uses a JavaScript engine, [Jurassic](https://github.com/paulbartrum/jurassic), that JIT compiles JS to .NET IL. While JS/ECMAScript has moved forward, Jurassic has not. Other libraries exist for .NET which allow scripts to be interpered or compiled and executed in a similar fashion ([JINT](https://jint.codeplex.com/)/[JavaScript.Net](https://github.com/JavascriptNet/Javascript.Net)/[NiL.JS](https://github.com/nilproject/NiL.JS)...) however each suffers in its own way, either in performance, lack of full compatability, level of maintence required and so forth. While contributions back to Jurassic, contributions to another library, or a completely custom JS engine built in .NET can be developed, the LOE to do so is extremely high. With Node/V8, there exists a platform that is actively being developed and maintained, is cross-platform and incorporates the latest in ECMAScript standards and focuses on performance and efficency. In the future, Node/Chakra will allow an even more Microsofty stack, if that is of importance in your use case.
 
 The challenge here is that Node takes a nice, sandboxed JavaScript environment in V8 (and now Chakra) and rips it wide open -- giving scripts the ability to access system resources (FS, processes, etc). The node implementation of Barista closes this sandbox back up to Barista scripts and exposes only functionality that manipulates resources in (end) user-land.
 
@@ -38,14 +36,14 @@ Future Goals:
 
 #### Structure
 
-Repository | Description
----------- | -----------
-barista-core | This repository contains the core barista capabilities that standup and manage sandbox instances, translate http requests to/from barista instances and translate the response back out, module system and so forth.
-barista-fiddle |  Contains a native-web IDE in which Barista scripts can be interactively developed; providing autocomplete, debugging, and other functionality common to development environments.
-barista-scriptbox |  Provides an implementation of a service in which scripts can be persisted.
-barista-server | Acts as a headless-server for Barista; core, fiddle, scriptbox...
-barista-cli | Barista command line tool to interact with barista, start and monitor services, etc.
-barista-coldpress | Provides an all-in-one desktop app for Barista using Electron to allow scripts to be developed, executed and stored..
+Repository         | Description
+------------------ | -----------
+[barista-core](https://github.com/BaristaLabs/barista-core)      | This repository contains the core barista capabilities that standup and manage sandbox instances, translate http requests to/from barista instances and translate the response back out, module system and so forth.
+[barista-fiddle](https://github.com/BaristaLabs/barista-fiddle)     |  Contains a native-web IDE in which Barista scripts can be interactively developed; providing autocomplete, debugging, and other functionality common to development environments.
+[barista-scriptbox](https://github.com/BaristaLabs/barista-scriptbox)  |  Provides an implementation of a service in which scripts can be persisted.
+[barista-server](https://github.com/BaristaLabs/barista-server) | Acts as a headless-server for Barista; core, fiddle, scriptbox...
+[barista-cli](https://github.com/BaristaLabs/barista-cli) | Barista command line tool to interact with barista, start and monitor services, etc.
+[barista-coldpress](https://github.com/BaristaLabs/barista-coldpress)  | Provides an all-in-one desktop app for Barista using Electron to allow scripts to be developed, executed and stored..
 
 #### Modules
 TODO...
