@@ -6,7 +6,7 @@
 
 In a nutshell, Barista helps end-users build server-side HTTP-based APIs using scripts that are treated as content.
 
-#####*"It's like LinqPad for WebAPIs that can be built in production!"*
+#####*"It's like LinqPad for microservices that can be built in production!"*
 
 Barista aims to allow end-users to execute scripts in a sandbox while exposing business-level functionality that does not have access to system-level resources. These scripts are executed via a HTTP-endpoint and can be used by jQuery, .Net, Nintex or any technology that can make http calls.
 
